@@ -1,0 +1,44 @@
+CREATE TABLE `quiz_state` (
+user_id Uint64, 
+question_index Uint64,
+PRIMARY KEY (`user_id`)
+);
+
+CREATE TABLE quiz_data (
+    question TEXT,
+    options TEXT,
+    correct_option Uint32,
+    PRIMARY KEY (question)
+);
+
+INSERT INTO quiz_data (question, options, correct_option)
+VALUES ('Какая страна является самой большой по площади?', 'США,Китай,Бразилия,Россия', 3);
+
+INSERT INTO quiz_data (question, options, correct_option)
+VALUES ('Какой город является столицей Франции?', 'Берлин,Париж,Лондон,Рим', 1);
+
+INSERT INTO quiz_data (question, options, correct_option)
+VALUES ('Какое море омывает берега Испании?', 'Японское море,Средиземное море,Черное море,Карибское море', 1);
+
+INSERT INTO quiz_data (question, options, correct_option)
+VALUES ('Какой является самой высокой горой в мире?', 'Мауна-Кеа,Денали,Эверест,Килиманджаро', 2);
+
+INSERT INTO quiz_data (question, options, correct_option)
+VALUES ('Какой является столицей Австралии?', 'Аделаида,Канберра,Сидней,Мельбурн', 1);
+
+INSERT INTO quiz_data (question, options, correct_option)
+VALUES ('Какое животное является национальным символом Австралии?', 'Эму,Кенгуру,Вомбат,Коала', 2);
+
+INSERT INTO quiz_data (question, options, correct_option)
+VALUES ('Какой город является самым населенным в мире?', 'Шанхай,Токио,Дели,Сан-Паулу', 1);
+
+INSERT INTO quiz_data (question, options, correct_option)
+VALUES ('Какое море омывает берега Норвегии?', 'Средиземное море,Балтийское море,Северное море,Черное море', 2);
+
+INSERT INTO quiz_data (question, options, correct_option)
+VALUES ('Какой является столицей Бразилии?', 'Манаус,Бразилиа,Рио-де-Жанейро,Сан-Паулу', 1);
+
+INSERT INTO quiz_data (question, options, correct_option)
+VALUES ('Какое животное является национальным символом Канады?', 'Бизон,Лось,Медведь,Лось', 0);
+
+COMMIT;
