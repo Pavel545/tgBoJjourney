@@ -1,1 +1,1 @@
-https://api.telegram.org/bot7579068099:AAEbkloRpuq2trTm_2RCX0J6qdUUPXHkVyw/setWebhook?url=https://d5dot841187qlcs6t0j6.apigw.yandexcloud.net/bot-api
+
