@@ -10,7 +10,6 @@ import json
 logging.basicConfig(level=logging.INFO)
 
 # Замените "YOUR_BOT_TOKEN" на токен, который вы получили от BotFather
-# API_TOKEN = '6353924149:AAELVCpnt0U4P_6lW76dm8EaCrqy91--OSQ'
 
 
 API_TOKEN = os.getenv("API_TOKEN")
